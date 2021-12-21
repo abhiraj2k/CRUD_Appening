@@ -1,0 +1,30 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  .loader {
+    width: 24px;
+    height: 24px;
+    background-color: #143a56;
+    border-radius: 50%;
+    animation: loaderBouncer 1s ease-in-out infinite both;
+    &.n1 {
+      animation-delay: 0.3s;
+    }
+    &.n2 {
+      animation-delay: 0.15s;
+    }
+  }
+  @keyframes loaderBouncer {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+}

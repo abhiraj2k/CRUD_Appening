@@ -1,0 +1,21 @@
+.result {
+  .result__content {
+    display: flex;
+    flex-direction: column;
+    .result__tab {
+      display: flex;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin-bottom: 5px;
+      .result__name {
+        display: flex;
+        font-size: 20px;
+        .first_name {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

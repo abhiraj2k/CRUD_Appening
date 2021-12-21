@@ -1,0 +1,49 @@
+.nav {
+  background-color: rgb(119, 0, 255);
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  padding: 15px;
+  .nav__content {
+    max-width: 1530px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .nav__left {
+      font-weight: 600;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .nav__mid {
+      input {
+        padding: 8px 15px;
+        border: none;
+        background-color: rgb(155, 67, 255);
+        color: white;
+        border-radius: 5px;
+        font-size: 18px;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: white;
+          opacity: 0.8;
+        }
+      }
+    }
+    .nav__right {
+      display: flex;
+      & > a,
+      & > div {
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 20px;
+        color: white;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
