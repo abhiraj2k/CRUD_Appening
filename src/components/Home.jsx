@@ -64,6 +64,7 @@ const Home = () => {
     tempUsers.push(userDetails);
     localStorage.setItem("users", JSON.stringify(tempUsers));
     localStorage.setItem("currentUser", JSON.stringify(userDetails));
+    navigate("/");
   };
   const handleSignOut = () => {
     localStorage.removeItem("currentUser");
